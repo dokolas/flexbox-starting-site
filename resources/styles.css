@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    background-color: black;
+    display: flex;
+    height: 85px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header img{
+    height: 75px;
+}
+
+nav{
+    margin-right: 20px;
+}
+
+nav span{
+    color: white;
+    padding: 10px;
+}
+
+.maincontainer{
+    position: relative;
+    top: 85px;
+}
+
+#spacesection{
+    display:flex;
+    background-image: url(../media/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
+    height: 500px;
+    align-items: center;
+}
+
+.spacecontent {
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.spacecontent h2 {
+    color: white;
+}
+
+#memegrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr);
+    height: 600px;
+    width: 100%;
+    grid-auto-rows: 300px;
+    justify-items: center;
+    background-color: black;
+    color: white;
+}
+
+.row1{
+    grid-column: 2 / span 1;
+}
