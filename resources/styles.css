@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Noto Sans JP', sans-serif
 }
 
 header {
@@ -19,6 +20,7 @@ header img{
 
 nav{
     margin-right: 20px;
+    display: none;
 }
 
 nav span{
@@ -114,4 +116,70 @@ footer {
     background-color: black;
     color: white;
     padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #memegrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px repeat(2, 300px);
+        width: 100%;
+        grid-auto-rows: 300px;
+        justify-items: center;
+        background-color: black;
+        color: white;
+        align-items: center;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+    
+    .row1{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .meme {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .meme img{
+        width: 330px;
+    }
+    
+    .meme1{
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .meme2{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+    
+    .meme3{
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+    
+    .meme4{
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 1;
+    }
+    
+    .meme5{
+        grid-column: 1 / span 1;
+        grid-row: 6 / span 1;
+    }
+    
+    .meme6{
+        grid-column: 1 / span 1;
+        grid-row: 7 / span 1;
+    }
+
+    footer{
+        padding-top: 50px;
+    }
 }
