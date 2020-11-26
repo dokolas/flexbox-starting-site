@@ -118,19 +118,19 @@ footer {
     padding-top: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+    
+    
     #memegrid {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px repeat(2, 300px);
+        grid-template-columns: 100%;
+        grid-template-rows: 100px;
         width: 100%;
-        grid-auto-rows: 300px;
+        grid-auto-rows: auto;
         justify-items: center;
         background-color: black;
         color: white;
         align-items: center;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
     }
     
     .row1{
@@ -138,15 +138,12 @@ footer {
         grid-row: 1 / span 1;
     }
     .meme {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
+        border-bottom: 1px solid white;
     }
     
     .meme img{
-        width: 330px;
+        width: 90%;
     }
     
     .meme1{
@@ -181,5 +178,9 @@ footer {
 
     footer{
         padding-top: 50px;
+    }
+
+    h3{
+        font-size: 2em;
     }
 }
