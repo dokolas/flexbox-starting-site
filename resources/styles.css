@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    font-family: 'Noto Sans JP', sans-serif
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: black;
 }
 
 header {
@@ -34,7 +35,7 @@ nav span{
 }
 
 #spacesection{
-    display:flex;
+    display: none;
     background-image: url(../media/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
     height: 500px;
     align-items: center;
@@ -47,8 +48,13 @@ nav span{
     display: flex;
 }
 
-.spacecontent h2 {
+h2 {
     color: white;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
 }
 
 #memegrid {
@@ -109,6 +115,39 @@ nav span{
     grid-row: 3 / span 1;
 }
 
+#buttongrids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr);
+    width: 100%;
+    grid-auto-rows: auto;
+    justify-items: center;
+    background-color: black;
+    color: white;
+    align-items: center;
+    grid-row-gap: 20px;
+}
+
+.buttonrow1{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.button1 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.button2 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.button3 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+
 footer {
     display: flex;
     width: 100%;
@@ -138,7 +177,6 @@ footer {
         grid-row: 1 / span 1;
     }
     .meme {
-        width: 100%;
         border-bottom: 1px solid white;
     }
     
