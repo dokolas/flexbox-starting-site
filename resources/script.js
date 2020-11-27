@@ -1,4 +1,5 @@
 let likespace = document.getElementById("spacebutton");
+let reyesclick = document.getElementById("reyesbutton");
 let i = 0;
 
 let likespacefunc = () => {
@@ -12,8 +13,6 @@ let likespacefunc = () => {
         document.getElementById("spacebutton").innerHTML = "Click if you like space?"
     }
 }
-
-let reyesclick = document.getElementById("reyesbutton");
 
 let reyesfunc = () => {
     document.getElementById("scrollforleader").style.display = "flex";

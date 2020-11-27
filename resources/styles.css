@@ -115,6 +115,10 @@ h3{
     grid-row: 3 / span 1;
 }
 
+#scrollforleader {
+    display: none;
+}
+
 button {
     font-size: 16px;
 }
@@ -122,7 +126,7 @@ button {
 #buttongrids {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr);
     width: 100%;
     grid-auto-rows: auto;
     justify-items: center;
@@ -133,7 +137,7 @@ button {
 }
 
 .buttonrow1{
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 2;
     grid-row: 1 / span 1;
 }
 
@@ -150,10 +154,6 @@ button {
     justify-content: center;
 }
 
-#scrollforleader {
-    display: none;
-}
-
 footer {
     display: flex;
     width: 100%;
@@ -162,6 +162,8 @@ footer {
     color: white;
     padding-top: 40px;
 }
+
+
 
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
     
@@ -227,13 +229,14 @@ footer {
     h3{
         font-size: 1em;
     }
+
     button {
         font-size: 2em;
     }
     
     #buttongrids {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         grid-template-rows: 100px;
         grid-auto-rows: auto;
         justify-items: center;
@@ -242,7 +245,6 @@ footer {
         align-items: center;
         grid-row-gap: 20px;
     }
-    
     .buttonrow1{
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
